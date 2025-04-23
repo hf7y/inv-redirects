@@ -1,0 +1,4 @@
+# Redirect path-based requests (e.g. /stash) to Apps Script
+/:id    https://script.google.com/macros/s/AKfycbxtk5u1EWXXBcdSR9gVSQr_TsiEhovZ100Xpp4IC1qzdayX8Kq7o_SijAikSI_z6Llj/exec?id=:id   301
+# Redirect requests that already have ?id= in query (when path is just "/")
+/       id=:id    https://script.google.com/macros/AKfycbxtk5u1EWXXBcdSR9gVSQr_TsiEhovZ100Xpp4IC1qzdayX8Kq7o_SijAikSI_z6Llj/exec?id=:id   301
